@@ -1,0 +1,238 @@
+{
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\run.py": {
+    "mtime": 1777724170.387641,
+    "hash": "98b2b437acd2c19c729d1b4002367389"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\config.py": {
+    "mtime": 1777726588.4123716,
+    "hash": "d3bcec554deb3da9efd753905963d4c6"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\dependencies.py": {
+    "mtime": 1777722563.935881,
+    "hash": "1c0273cb5b6735da9f6b1a1610c607fd"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\main.py": {
+    "mtime": 1777728741.444664,
+    "hash": "aab81f10dcdc5a37c485192be2527d91"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\__init__.py": {
+    "mtime": 1777724118.6542368,
+    "hash": "87151fc6f0e000a816598c0e807a79c3"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\models\\analysis.py": {
+    "mtime": 1777728364.0663226,
+    "hash": "7b1bb039622b164b9641968a4e0865b1"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\models\\job.py": {
+    "mtime": 1777728527.7001786,
+    "hash": "b2bf7858ade51af659d92ab84143cf67"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\models\\resume.py": {
+    "mtime": 1777722685.2559605,
+    "hash": "d1b4dc8ff0880ace9f6dbc257e7362df"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\models\\user.py": {
+    "mtime": 1777722600.4514437,
+    "hash": "f17fd57f16cf91c59f2b3d599813cf9c"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\models\\__init__.py": {
+    "mtime": 1777722805.9337752,
+    "hash": "a9efe586347c739c46d0d6512ec24eb4"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\analysis.py": {
+    "mtime": 1777728301.6352491,
+    "hash": "b285f9ae4f45ea45ec5f6c864a4afc2a"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\auth.py": {
+    "mtime": 1777815445.723873,
+    "hash": "95dc1e0318f07987cdf61bfb2e1dd713"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\documents.py": {
+    "mtime": 1777728683.4223504,
+    "hash": "f5eda7719cad0923c8fb59ed4f8025c6"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\health.py": {
+    "mtime": 1777724106.5772214,
+    "hash": "7c2d84864655a957706426da9556f21b"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\jobs.py": {
+    "mtime": 1777728484.9274821,
+    "hash": "50d08ae58e05c70c5d0f46546cb700da"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\linkedin.py": {
+    "mtime": 1777728602.6298378,
+    "hash": "a0d761cb96b8cc65d38cd094eee18793"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\payments.py": {
+    "mtime": 1777724103.1044135,
+    "hash": "17b3a5481a4514de011ad3296746b5e0"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\resumes.py": {
+    "mtime": 1777723711.6920617,
+    "hash": "5839dcfa713216f2e934368534d78828"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\routers\\__init__.py": {
+    "mtime": 1777723550.8837812,
+    "hash": "ff9b252e176c68a1cf7b7c78f94608fa"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\services\\ai_engine.py": {
+    "mtime": 1777726788.5953498,
+    "hash": "66e241eeda3434dbedd8821d6e987f71"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\services\\ats_engine.py": {
+    "mtime": 1777765760.3918452,
+    "hash": "aa7e774dd080d0892d12c58d9711a630"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\services\\docx_generator.py": {
+    "mtime": 1777815535.6401012,
+    "hash": "6f896e48d38e4bccbeec1e390ad66f81"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\services\\job_scraper.py": {
+    "mtime": 1777772206.4287508,
+    "hash": "bbd2207259d26353257338af07f215dc"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\services\\linkedin_optimizer.py": {
+    "mtime": 1777772259.3450181,
+    "hash": "f3744653a52c4fa63f6ea74079d4352c"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\services\\resume_parser.py": {
+    "mtime": 1777772312.204473,
+    "hash": "def5e4fd91e94719912c6248a84cf956"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\services\\__init__.py": {
+    "mtime": 1777723465.641579,
+    "hash": "d15582b2d83c853cb0302783d44f3622"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\utils\\logger.py": {
+    "mtime": 1777723364.3656628,
+    "hash": "97552c6e2f95d719511d9237d3777c95"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\utils\\supabase_client.py": {
+    "mtime": 1777764307.5035017,
+    "hash": "952e08d52bfca8750165c2cc108a2680"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\utils\\text_utils.py": {
+    "mtime": 1777764190.6315994,
+    "hash": "483a7638c65f6333abf3543fee85769e"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\utils\\__init__.py": {
+    "mtime": 1777723458.841819,
+    "hash": "7fdd749e8d4450f4823d302a7a4990a4"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\workers\\celery_worker.py": {
+    "mtime": 1777724167.7182803,
+    "hash": "9886879c5b08a61ecb37286283a67a58"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\app\\workers\\__init__.py": {
+    "mtime": 1777723519.3005404,
+    "hash": "74a48b73d1ecb026892e88e4f1b290b2"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\supabase\\functions\\analyze-match\\index.ts": {
+    "mtime": 1777679118.9836154,
+    "hash": "60e27b4a4f736ec921fff7f5d9c2456a"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\supabase\\functions\\analyze-raw\\index.ts": {
+    "mtime": 1777679085.758179,
+    "hash": "df7db3afee362adb9993fe255dddf641"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\supabase\\migrations\\001_init_saas_architecture.sql": {
+    "mtime": 1777657103.7137275,
+    "hash": "0465c32378f2efdc2202716414c8a843"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\supabase\\migrations\\002_saas_plans_subscriptions.sql": {
+    "mtime": 1777724307.3870542,
+    "hash": "01d0c5dd0b31e42d84c283b11ccfd6f1"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\supabase\\migrations\\003_update_optimization_results.sql": {
+    "mtime": 1777657949.5263233,
+    "hash": "70860178abbba287b75ef238d785d037"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\postcss.config.js": {
+    "mtime": 1777678632.278426,
+    "hash": "99eb040bbc2beaeafd2eabb96d019447"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\tailwind.config.js": {
+    "mtime": 1777678611.7172875,
+    "hash": "6ffdf3686994f7a007793989303f420c"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\vite.config.ts": {
+    "mtime": 1777681363.1084516,
+    "hash": "bed3ae39ee9f6f1a2ca1581965e8c32e"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\App.tsx": {
+    "mtime": 1777762035.8292158,
+    "hash": "8f943e56c2a39ecb3adad1ebecfb4787"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\config.ts": {
+    "mtime": 1777760458.098006,
+    "hash": "7e2c022cb99cdfdf9f638cd6926dba1f"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\main.tsx": {
+    "mtime": 1777660811.6015348,
+    "hash": "7657d54ed2fca8b6c55712cfecd3147c"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\vite-env.d.ts": {
+    "mtime": 1777772533.166672,
+    "hash": "6770b2ce8d78069bbf12ade7d7a4b51c"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\auth\\AuthPage.tsx": {
+    "mtime": 1777762747.1586025,
+    "hash": "b2fe797141476d3ffec402f2be6e0746"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\dashboard\\DashboardPage.tsx": {
+    "mtime": 1777762978.538052,
+    "hash": "a5ab830294a60268967017ddee7d08a3"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\home\\Hero.tsx": {
+    "mtime": 1777819950.5314586,
+    "hash": "4388ac108672f382859fe929d3593dfc"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\jobs\\JobSearchPage.tsx": {
+    "mtime": 1777763739.4491303,
+    "hash": "eb7f0ec280004d1e68dca132c5d00414"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\layout\\Navbar.tsx": {
+    "mtime": 1777817977.9432912,
+    "hash": "d71587a07c712bb067fe70da342a2850"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\layout\\NotFound.tsx": {
+    "mtime": 1777760850.4502263,
+    "hash": "655449b71437797e096fc497e9a012fb"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\linkedin\\LinkedInAuditPage.tsx": {
+    "mtime": 1777763844.0596,
+    "hash": "03e4e45049c13bb590b8a88a0a3975c9"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\MatchDashboard\\MatchResult.tsx": {
+    "mtime": 1777729244.4321985,
+    "hash": "161333641c937661fc05b31469053b6f"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\components\\pricing\\PricingPage.tsx": {
+    "mtime": 1777763930.741134,
+    "hash": "3466755612da560eccfb1c111d2389ae"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\src\\services\\supabaseClient.ts": {
+    "mtime": 1777764059.633917,
+    "hash": "51c433a03ce94e46b5198ee0c888ec78"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\CONCLUIDO.md": {
+    "mtime": 1777731187.4685328,
+    "hash": "059cff583793f5f4c41ce60efa7afdfd"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\QA.md": {
+    "mtime": 1777758363.6071577,
+    "hash": "39bd1f9d7e83ae905dfe274371514f1c"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\RESOLVIDO.md": {
+    "mtime": 1777772955.9618552,
+    "hash": "e8a347119430a7e3b09dfbe19597ca94"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\api\\requirements.txt": {
+    "mtime": 1777722329.0138862,
+    "hash": "8c69ac655dd6969148f78fb81133bfd4"
+  },
+  "D:\\PROJETOS\\ANTIGRAVITY\\JARVIS CV\\web\\index.html": {
+    "mtime": 1777817651.875744,
+    "hash": "fadd362fc4fd490a7f940f4b3ca22f92"
+  }
+}
