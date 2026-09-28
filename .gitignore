@@ -30,3 +30,5 @@ Thumbs.db
 # Build artifacts
 *.log
 logs/
+# Tool caches
+graphify-out/
