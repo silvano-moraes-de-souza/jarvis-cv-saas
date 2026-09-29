@@ -69,7 +69,6 @@ supabase/
   migrations/    schema, plans and subscriptions, results
   functions/     Edge Functions (Deno)
 web/src/         React app: landing, auth, dashboard, match result, jobs, LinkedIn audit, pricing
-docs/reports/    QA, fixes and progress reports (Portuguese)
 ```
 
 About 7,400 lines of Python, TypeScript and SQL.
@@ -102,7 +101,7 @@ npm run dev                 # http://localhost:5173
 ## Limitations
 
 - The Celery tasks are defined, but the API routes still run the analysis inside the request. Moving them to the queue is the next step.
-- No automated test suite. The QA in `docs/reports/qa-report.md` was manual.
+- No automated test suite yet; QA so far has been manual.
 - Job search depends on the HTML of each portal and breaks when a portal changes its layout.
 
 ## Author

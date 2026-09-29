@@ -222,7 +222,7 @@ class DocxGenerator:
         footer_para = doc.add_paragraph()
         footer_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
         contact_email = os.getenv("JARVIS_CONTACT_EMAIL", "contato@jarviscv.com")
-        run = footer_para.add_run(f"Otimizado por JARVIS CV — {contact_email}")
+        run = footer_para.add_run(f"Otimizado por JARVIS CV | {contact_email}")
         run.font.size = Pt(8)
         run.font.color.rgb = COLORS["light"]
         run.font.italic = True

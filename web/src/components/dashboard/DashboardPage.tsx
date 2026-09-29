@@ -118,7 +118,7 @@ export const DashboardPage = () => {
           </div>
           <div className="stat-card">
             <TrendingUp size={24} className="text-purple-400 mx-auto mb-2" />
-            <div className="text-2xl font-black text-white">—</div>
+            <div className="text-2xl font-black text-white">-</div>
             <div className="section-label mb-0">Score Médio</div>
           </div>
         </div>
@@ -203,7 +203,7 @@ export const DashboardPage = () => {
                   {jobs.map((j: any) => (
                     <li key={j.id} className="flex items-center justify-between p-3 rounded-xl bg-slate-950/50 border border-slate-800">
                       <span className="text-sm text-slate-300">{j.title}</span>
-                      <span className="text-xs text-slate-500">{j.company || '—'}</span>
+                      <span className="text-xs text-slate-500">{j.company || '-'}</span>
                     </li>
                   ))}
                 </ul>

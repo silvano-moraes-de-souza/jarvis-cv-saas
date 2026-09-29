@@ -32,7 +32,7 @@ FALLBACK_CHAIN = {
     "fast": [],  # já é o mais rápido
 }
 
-# Timeout de 40s — se não responder, troca de IA imediatamente
+# Timeout de 40s: se não responder, troca de IA imediatamente
 AI_TIMEOUT = 40.0
 
 # Nemotron mini limit
@@ -65,11 +65,11 @@ REGRAS BRUTAIS:
 5. Responda EXCLUSIVAMENTE em PORTUGUÊS BRASILEIRO
 6. A seção 'optimized_resume' é OBRIGATÓRIA e deve conter sugestões REAIS de reescrita, não placeholders
 
-REGRA ABSOLUTA — IGNORE DATAS (.gitignore de datas):
+REGRA ABSOLUTA: IGNORE DATAS (.gitignore de datas):
 - DATAS NÃO EXISTEM PARA VOCÊ. Ignore TODAS as datas, anos, períodos, meses mencionados no currículo ou na vaga.
 - NUNCA critique, mencione, analise ou avalie qualquer data (ex: "2025", "jan 2020 - mar 2022", "3 anos", "desde 2019").
 - NUNCA use datas como fator negativo ou positivo no scoring.
-- Se uma experiência parece "futura" ou "passada" — NÃO IMPORTA. Avalie APENAS o conteúdo.
+- Se uma experiência parece "futura" ou "passada": NÃO IMPORTA. Avalie APENAS o conteúdo.
 - Trate datas como se fossem REDACTED/ocultadas. Elas são invisíveis.
 
 PESOS DO SCORING (use estes pesos reais):
@@ -127,9 +127,9 @@ LINKEDIN_AUDIT_PROMPT = """Você é um Auditor de LinkedIn de Nível MUNDIAL. An
 Responda EXCLUSIVAMENTE em PORTUGUÊS BRASILEIRO.
 
 REGRAS CRÍTICAS:
-1. IGNORE DATAS: Não analise, critique ou mencione datas do perfil. O candidato pode ter experiências atuais ou futuras — isso é irrelevante para a auditoria.
+1. IGNORE DATAS: Não analise, critique ou mencione datas do perfil. O candidato pode ter experiências atuais ou futuras: isso é irrelevante para a auditoria.
 2. CTA EXPLICADO: Se o perfil não tem CTA (Call-to-Action = frase que convida o recrutador a entrar em contato, como "Vamos conversar?", "Conecte-se comigo", "Entre em contato"), explique O QUE É um CTA e POR QUE ele importa: "CTA (Call-to-Action) é uma frase no final do Sobre que convida recrutadores a entrarem em contato. Perfis com CTA recebem até 3x mais mensagens de recrutadores."
-3. HEADLINE FORTE: Sugestões de headline devem ser ATTRATIVAS, OBJETIVAS e DIRETAS — SEM clichês como "apaixonado por dados". Use formato: Cargo alvo | 3 skills mais fortes do perfil | Proposta de valor única. Exemplo: "Analytics Engineer | Python, SQL & Power BI | Transformo dados brutos em decisões que geram R$ 2M+ em economia"
+3. HEADLINE FORTE: Sugestões de headline devem ser ATTRATIVAS, OBJETIVAS e DIRETAS: SEM clichês como "apaixonado por dados". Use formato: Cargo alvo | 3 skills mais fortes do perfil | Proposta de valor única. Exemplo: "Analytics Engineer | Python, SQL & Power BI | Transformo dados brutos em decisões que geram R$ 2M+ em economia"
 4. RESULTADOS QUANTIFICADOS PERSONALIZADOS: Ao sugerir resultados quantificados, ANALISE o perfil real da pessoa e sugira métricas que FAZEM SENTIDO com a trajetória dela. NÃO invente números genéricos. Se a pessoa trabalha com supply chain, sugira "Reduzi X% no custo de estoque". Se trabalha com dados, sugira "Automatizei relatórios que economizaram X horas/semana". Use o contexto real das experiências dela.
 
 Analise o perfil como um recruiter de elite e como o algoritmo do LinkedIn.
@@ -164,7 +164,7 @@ RETORNE JSON: {
 
 def _strip_dates(text: str) -> str:
     """Remove TODAS as datas do texto antes de enviar para IA (.gitignore de datas).
-    A IA nunca verá datas — como se nunca tivessem existido."""
+    A IA nunca verá datas: como se nunca tivessem existido."""
     import re
     # Padrões de data: "2020-2023", "Jan 2020 - Mar 2022", "01/2020", "2 anos", "3+ anos", "desde 2019"
     patterns = [
@@ -198,7 +198,7 @@ def _parse_json_response(content: str) -> dict:
 
 
 class AIEngine:
-    """Motor de IA Multi-Model — 5 especialistas NVIDIA com fallback em cascata"""
+    """Motor de IA Multi-Model: 5 especialistas NVIDIA com fallback em cascata"""
 
     def __init__(self):
         self.api_url = settings.nvidia_api_url
@@ -286,7 +286,7 @@ class AIEngine:
 
                 except (httpx.TimeoutException, asyncio.TimeoutError) as e:
                     last_error = f"Timeout {AI_TIMEOUT}s ({model})"
-                    logger.warn(f"[{model}] TIMEOUT após {AI_TIMEOUT}s — pulando para próximo modelo")
+                    logger.warn(f"[{model}] TIMEOUT após {AI_TIMEOUT}s: pulando para próximo modelo")
                     break  # Vai imediatamente pro próximo modelo
 
                 except httpx.HTTPStatusError as e:
@@ -301,7 +301,7 @@ class AIEngine:
                         await asyncio.sleep(delay)
                         continue
 
-                    # Outros erros HTTP — vai pro próximo modelo
+                    # Outros erros HTTP: vai pro próximo modelo
                     logger.error(f"[{model}] HTTP {status}: {error_detail}")
                     break
 
@@ -314,7 +314,7 @@ class AIEngine:
                 logger.warn(f"[FALLBACK] '{primary_model}' falhou ({last_error}). Tentando: {fallbacks[0]}")
 
         logger.error(f"[FALLBACK] TODOS os modelos falharam para '{model_key}'. Último erro: {last_error}")
-        raise Exception(f"AI falhou — todos os modelos esgotados para '{model_key}'. Último erro: {last_error}")
+        raise Exception(f"AI falhou: todos os modelos esgotados para '{model_key}'. Último erro: {last_error}")
 
     def _generate_local_ats_result(self, cv_text: str, job_text: str) -> dict:
         """Resultado básico gerado localmente quando TODAS as IAs falham.
@@ -359,7 +359,7 @@ class AIEngine:
                 "level": "detectar automaticamente",
                 "years_estimated": 0,
                 "alignment": "match",
-                "detail": "Análise detalhada indisponível — IA não respondeu. Adicione anos de experiência claramente.",
+                "detail": "Análise detalhada indisponível: IA não respondeu. Adicione anos de experiência claramente.",
             },
             "interview_chance": {
                 "percent": round(len(matched) / max(len(job_keywords), 1) * 80, 1),

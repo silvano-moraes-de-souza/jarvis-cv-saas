@@ -92,7 +92,7 @@ class LinkedInOptimizer:
         elif len(pipe_parts) >= 2:
             score += 2
         else:
-            issues.append({"error": "Headline sem separadores | — use formato: Cargo | Especialidade | Valor", "fix": "Separe com | para melhor leitura e SEO"})
+            issues.append({"error": "Headline sem separadores |. Use formato: Cargo | Especialidade | Valor", "fix": "Separe com | para melhor leitura e SEO"})
 
         # Buscar keywords técnicas no headline
         all_keywords = []

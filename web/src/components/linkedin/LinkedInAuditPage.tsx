@@ -105,11 +105,11 @@ const EXTRACTOR_SCRIPT = `
               const jsonStr = JSON.stringify(data, null, 2);
               const logEl = document.getElementById('li-log');
               if (logEl) {
-                logEl.innerHTML = '<div style="margin-bottom:12px;color:#22c55e;font-weight:bold;">✅ Extração completa! Clique em COPIAR abaixo.</div><pre style="background:#0f172a;border:1px solid #334155;border-radius:8px;padding:12px;font-size:11px;color:#94a3b8;max-height:200px;overflow-y:auto;white-space:pre-wrap;">' + jsonStr.replace(/</g,'&lt;') + '</pre><div style="margin-top:12px;display:flex;gap:8px;"><button id="li-copy-btn" style="flex:1;background:#3b82f6;color:white;border:none;border-radius:8px;padding:10px;font-weight:bold;cursor:pointer;font-size:14px;">📋 Copiar JSON</button><button id="li-close-btn" style="background:#334155;color:#94a3b8;border:none;border-radius:8px;padding:10px;cursor:pointer;font-size:14px;">Fechar</button></div>';
+                logEl.innerHTML = '<div style="margin-bottom:12px;color:#22c55e;font-weight:bold;">✓ Extração completa! Clique em COPIAR abaixo.</div><pre style="background:#0f172a;border:1px solid #334155;border-radius:8px;padding:12px;font-size:11px;color:#94a3b8;max-height:200px;overflow-y:auto;white-space:pre-wrap;">' + jsonStr.replace(/</g,'&lt;') + '</pre><div style="margin-top:12px;display:flex;gap:8px;"><button id="li-copy-btn" style="flex:1;background:#3b82f6;color:white;border:none;border-radius:8px;padding:10px;font-weight:bold;cursor:pointer;font-size:14px;">📋 Copiar JSON</button><button id="li-close-btn" style="background:#334155;color:#94a3b8;border:none;border-radius:8px;padding:10px;cursor:pointer;font-size:14px;">Fechar</button></div>';
 
                 document.getElementById('li-copy-btn').onclick = () => {
                   navigator.clipboard.writeText(jsonStr).then(() => {
-                    document.getElementById('li-copy-btn').textContent = '✅ Copiado!';
+                    document.getElementById('li-copy-btn').textContent = '✓ Copiado!';
                     document.getElementById('li-copy-btn').style.background = '#22c55e';
                   });
                 };
@@ -125,7 +125,7 @@ const EXTRACTOR_SCRIPT = `
         const logEl = document.getElementById('li-log');
         if (logEl) {
           logEl.innerHTML = '<div style="color:#eab308;">⚠ Skills não extraídas. Tente ir manualmente para /details/skills/ e rodar novamente.</div><pre style="background:#0f172a;border:1px solid #334155;border-radius:8px;padding:12px;font-size:11px;color:#94a3b8;max-height:200px;overflow-y:auto;">' + jsonStr.replace(/</g,'&lt;') + '</pre><div style="margin-top:12px;display:flex;gap:8px;"><button id="li-copy-btn" style="flex:1;background:#3b82f6;color:white;border:none;border-radius:8px;padding:10px;font-weight:bold;cursor:pointer;font-size:14px;">📋 Copiar JSON</button><button id="li-close-btn" style="background:#334155;color:#94a3b8;border:none;border-radius:8px;padding:10px;cursor:pointer;font-size:14px;">Fechar</button></div>';
-          document.getElementById('li-copy-btn').onclick = () => { navigator.clipboard.writeText(jsonStr).then(() => { document.getElementById('li-copy-btn').textContent = '✅ Copiado!'; document.getElementById('li-copy-btn').style.background = '#22c55e'; }); };
+          document.getElementById('li-copy-btn').onclick = () => { navigator.clipboard.writeText(jsonStr).then(() => { document.getElementById('li-copy-btn').textContent = '✓ Copiado!'; document.getElementById('li-copy-btn').style.background = '#22c55e'; }); };
           document.getElementById('li-close-btn').onclick = () => overlay.remove();
         }
       }
@@ -319,7 +319,7 @@ export const LinkedInAuditPage = () => {
                     <div className="space-y-4">
                       <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-4">
                         <p className="text-sm text-slate-300 mb-3">
-                          ✅ Seu perfil abriu em outra aba. Agora:
+                          ✓ Seu perfil abriu em outra aba. Agora:
                         </p>
                         <ol className="text-sm text-slate-400 space-y-2 list-decimal list-inside">
                           <li>Na aba do LinkedIn, pressione <kbd className="px-2 py-0.5 bg-slate-800 rounded text-xs text-white">F12</kbd> (Console)</li>

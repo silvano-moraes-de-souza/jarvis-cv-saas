@@ -256,10 +256,10 @@ export const JobSearchPage = () => {
             <div className="mt-4 pt-3 border-t border-slate-800">
               <div className="section-label mb-2">Dificuldade de Candidatura</div>
               <div className="flex flex-wrap gap-3">
-                <span className="badge-plan badge-pro text-[10px]">Fácil — poucos candidatos, alta chance</span>
-                <span className="badge-plan badge-free text-[10px]">Moderado — competição normal</span>
-                <span className="badge-plan badge-elite text-[10px]">Difícil — muitos candidatos qualificados</span>
-                <span className="badge-plan bg-red-500/20 text-red-400 border border-red-500/30 text-[10px]">Muito Difícil — alta competição</span>
+                <span className="badge-plan badge-pro text-[10px]">Fácil: poucos candidatos, alta chance</span>
+                <span className="badge-plan badge-free text-[10px]">Moderado: competição normal</span>
+                <span className="badge-plan badge-elite text-[10px]">Difícil: muitos candidatos qualificados</span>
+                <span className="badge-plan bg-red-500/20 text-red-400 border border-red-500/30 text-[10px]">Muito Difícil: alta competição</span>
               </div>
             </div>
           </div>
@@ -276,7 +276,7 @@ export const JobSearchPage = () => {
               {/* Fit Score */}
               <div className={`shrink-0 w-16 h-16 rounded-2xl flex flex-col items-center justify-center border ${fitBg(job.fit_score)}`}>
                 <span className={`text-lg font-black ${fitColor(job.fit_score)}`}>
-                  {job.fit_score > 0 ? Math.round(job.fit_score) : '—'}
+                  {job.fit_score > 0 ? Math.round(job.fit_score) : '-'}
                 </span>
                 <span className={`text-[9px] font-bold ${fitColor(job.fit_score)}`}>
                   {job.fit_score > 0 ? fitLabel(job.fit_score) : 'SEM FIT'}
@@ -292,8 +292,8 @@ export const JobSearchPage = () => {
                   )}
                 </div>
                 <div className="flex items-center gap-3 text-xs text-slate-500">
-                  <span className="flex items-center gap-1"><Briefcase size={12} /> {job.company || '—'}</span>
-                  <span className="flex items-center gap-1"><MapPin size={12} /> {job.location || '—'}</span>
+                  <span className="flex items-center gap-1"><Briefcase size={12} /> {job.company || '-'}</span>
+                  <span className="flex items-center gap-1"><MapPin size={12} /> {job.location || '-'}</span>
                   {job.salary_range && <span className="flex items-center gap-1"><DollarSign size={12} /> {job.salary_range}</span>}
                 </div>
                 {job.description && (
