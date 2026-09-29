@@ -13,6 +13,8 @@
 
 > A SaaS that reads your resume and a job posting, tells you how an ATS will score the match and why, rewrites what is missing, searches 9 Brazilian job portals, and exports the result as a DOCX. Built end to end: API, AI layer, database, payments and frontend.
 
+![Jarvis CV landing page](docs/screenshot-landing.png)
+
 ## Features
 
 | | |

@@ -76,15 +76,7 @@ function MiniSparkline({ color, dashed }: { color: string; dashed?: boolean }) {
 }
 
 const stats = [
-  {
-    value: 97,
-    suffix: '%',
-    label: 'Rejeitados por ATS',
-    icon: Shield,
-    color: '#ef4444',
-    sparkColor: '#ef4444',
-    dashed: true,
-  },
+  // Números do próprio produto (ats_weights, job_scraper, ai_engine), não estatísticas de mercado.
   {
     value: 6,
     suffix: '',
@@ -95,9 +87,18 @@ const stats = [
     dashed: false,
   },
   {
-    value: 3,
-    suffix: 'x',
-    label: 'Mais Entrevistas',
+    value: 9,
+    suffix: '',
+    label: 'Portais de Vagas',
+    icon: Shield,
+    color: '#22c55e',
+    sparkColor: '#22c55e',
+    dashed: true,
+  },
+  {
+    value: 5,
+    suffix: '',
+    label: 'Modelos de IA',
     icon: TrendingUp,
     color: '#a855f7',
     sparkColor: '#a855f7',
@@ -135,12 +136,9 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-slate-400 max-w-xl mb-2 leading-relaxed animate-fade-in-up delay-200">
-              97% dos currículos são rejeitados antes de um humano ler.</p>
-            <p className="text-lg md:text-xl text-slate-400 max-w-xl mb-2 leading-relaxed animate-fade-in-up delay-200">
-              O JARVIS CV simula o algoritmo real do Gupy, Catho e LinkedIn
-            </p>
+              Uma nota de 0 a 100 em 6 dimensões mostra onde seu currículo perde pontos para a vaga.</p>
             <p className="text-lg md:text-xl text-slate-400 max-w-xl mb-10 leading-relaxed animate-fade-in-up delay-200">
-              e otimiza seu currículo para passar.
+              A IA reescreve o que falta, e você busca vagas em 9 portais de uma vez.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4 mb-12 animate-fade-in-up delay-300">
