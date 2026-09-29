@@ -24,6 +24,17 @@
 | LinkedIn audit | Extracts a profile and suggests improvements |
 | Plans | Free, Pro (R$ 49) and Elite (R$ 149) with daily usage limits, Stripe Checkout and webhooks |
 
+![ATS score weights](docs/ats_weights.png)
+
+<sub>Read from `ats_weights` in <a href="api/app/config.py">api/app/config.py</a> by <a href="scripts/chart_ats_weights.py">scripts/chart_ats_weights.py</a>, so the chart changes if the weights do.</sub>
+
+<details>
+<summary>Pricing page (plans and daily limits enforced by the API)</summary>
+
+![Pricing page](docs/screenshot-pricing.png)
+
+</details>
+
 ## Architecture
 
 ```mermaid
